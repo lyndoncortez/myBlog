@@ -5,9 +5,11 @@
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
-        <td><%= link_to 'Show', article.title %></td>
+        <td><%= link_to 'Show', article %></td>
       </tr>
    <% end %> 
   </tbody>
 </table>
+
+<button><%= link_to "New Article", new_article_path, :class => "btn" %></button>
 
