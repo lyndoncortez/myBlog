@@ -1,15 +1,17 @@
-<h1>Articles</h1>
+<h1 class="jumbotron">Welcome to My Blog</h1>
 
-<table>
+<h2>Articles</h2>
+
+<table class="table table-borderless">
   <tbody>
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
-        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Read', article %></td>
       </tr>
    <% end %> 
   </tbody>
 </table>
 
-<button><%= link_to "New Article", new_article_path, :class => "btn" %></button>
+<button class="btn btn-primary"><%= link_to "New Article", new_article_path, :class => "link"  %></button>
 
